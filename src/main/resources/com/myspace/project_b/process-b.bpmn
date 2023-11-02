@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_BK8CEHmKEe6-DqWVeLLs5w" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_J8j1cHmaEe6Ri4nSU6fHTA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd http://www.omg.org/spec/DD/20100524/DC DC.xsd http://www.omg.org/spec/DD/20100524/DI DI.xsd " exporter="jBPM Process Modeler" exporterVersion="2.0" targetNamespace="http://www.omg.org/bpmn20">
   <bpmn2:itemDefinition id="_nameItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameOutputXItem" structureRef="String"/>
@@ -33,7 +33,7 @@
     <bpmn2:endEvent id="_3D65E6EE-51AA-475F-AFDA-BCB5C388D77B">
       <bpmn2:incoming>_16A64DFE-C391-4DEE-AA50-099766AE7F49</bpmn2:incoming>
     </bpmn2:endEvent>
-    <bpmn2:callActivity id="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE" drools:independent="false" drools:waitForCompletion="true" name="Sub-process" calledElement="project-A.processA">
+    <bpmn2:callActivity id="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE" drools:independent="false" drools:waitForCompletion="true" name="Sub-process" calledElement="project-a.processA">
       <bpmn2:extensionElements>
         <drools:metaData name="elementname">
           <drools:metaValue><![CDATA[Sub-process]]></drools:metaValue>
@@ -48,21 +48,21 @@ System.out.println("Calling the other process");]]></drools:script>
       </bpmn2:extensionElements>
       <bpmn2:incoming>_2DEC925D-0AA4-4683-9A2F-130BA57A5DB3</bpmn2:incoming>
       <bpmn2:outgoing>_16A64DFE-C391-4DEE-AA50-099766AE7F49</bpmn2:outgoing>
-      <bpmn2:ioSpecification id="_BK8CEXmKEe6-DqWVeLLs5w">
+      <bpmn2:ioSpecification id="_J8kcgHmaEe6Ri4nSU6fHTA">
         <bpmn2:dataInput id="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameInputX" drools:dtype="String" itemSubjectRef="__9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameInputXItem" name="name"/>
         <bpmn2:dataOutput id="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameOutputX" drools:dtype="String" itemSubjectRef="__9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameOutputXItem" name="name"/>
-        <bpmn2:inputSet id="_BK8CEnmKEe6-DqWVeLLs5w">
+        <bpmn2:inputSet id="_J8kcgXmaEe6Ri4nSU6fHTA">
           <bpmn2:dataInputRefs>_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameInputX</bpmn2:dataInputRefs>
         </bpmn2:inputSet>
-        <bpmn2:outputSet id="_BK8CE3mKEe6-DqWVeLLs5w">
+        <bpmn2:outputSet id="_J8kcgnmaEe6Ri4nSU6fHTA">
           <bpmn2:dataOutputRefs>_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameOutputX</bpmn2:dataOutputRefs>
         </bpmn2:outputSet>
       </bpmn2:ioSpecification>
-      <bpmn2:dataInputAssociation id="_BK8CFHmKEe6-DqWVeLLs5w">
+      <bpmn2:dataInputAssociation id="_J8kcg3maEe6Ri4nSU6fHTA">
         <bpmn2:sourceRef>name</bpmn2:sourceRef>
         <bpmn2:targetRef>_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameInputX</bpmn2:targetRef>
       </bpmn2:dataInputAssociation>
-      <bpmn2:dataOutputAssociation id="_BK8CFXmKEe6-DqWVeLLs5w">
+      <bpmn2:dataOutputAssociation id="_J8kchHmaEe6Ri4nSU6fHTA">
         <bpmn2:sourceRef>_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE_nameOutputX</bpmn2:sourceRef>
         <bpmn2:targetRef>name</bpmn2:targetRef>
       </bpmn2:dataOutputAssociation>
@@ -71,8 +71,8 @@ System.out.println("Calling the other process");]]></drools:script>
       <bpmn2:outgoing>_4DCF28F3-E7F2-4DCD-B7DC-BAEBA57C5772</bpmn2:outgoing>
     </bpmn2:startEvent>
   </bpmn2:process>
-  <bpmndi:BPMNDiagram id="_BK8CFnmKEe6-DqWVeLLs5w">
-    <bpmndi:BPMNPlane id="_BK8CF3mKEe6-DqWVeLLs5w" bpmnElement="project-b.process-b">
+  <bpmndi:BPMNDiagram id="_J8kchXmaEe6Ri4nSU6fHTA">
+    <bpmndi:BPMNPlane id="_J8kchnmaEe6Ri4nSU6fHTA" bpmnElement="project-b.process-b">
       <bpmndi:BPMNShape id="shape__FDB5EA63-D637-439F-9452-921CFD9411B6" bpmnElement="_FDB5EA63-D637-439F-9452-921CFD9411B6">
         <dc:Bounds height="56.0" width="56.0" x="160.0" y="213.0"/>
       </bpmndi:BPMNShape>
@@ -99,19 +99,19 @@ System.out.println("Calling the other process");]]></drools:script>
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
-  <bpmn2:relationship id="_BK8CGHmKEe6-DqWVeLLs5w" type="BPSimData">
+  <bpmn2:relationship id="_J8kch3maEe6Ri4nSU6fHTA" type="BPSimData">
     <bpmn2:extensionElements>
       <bpsim:BPSimData>
         <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
           <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters"/>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FDB5EA63-D637-439F-9452-921CFD9411B6" id="_BK8CGXmKEe6-DqWVeLLs5w">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_FDB5EA63-D637-439F-9452-921CFD9411B6" id="_J8kciHmaEe6Ri4nSU6fHTA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
               </bpsim:ProcessingTime>
             </bpsim:TimeParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE" id="_BK8CGnmKEe6-DqWVeLLs5w">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_9F7AC237-3D8D-4796-BFF2-92B0AF0619FE" id="_J8kciXmaEe6Ri4nSU6fHTA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -131,7 +131,7 @@ System.out.println("Calling the other process");]]></drools:script>
               </bpsim:UnitCost>
             </bpsim:CostParameters>
           </bpsim:ElementParameters>
-          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_202B7CA8-61A9-4092-8770-3BAF8315F026" id="_BK8CG3mKEe6-DqWVeLLs5w">
+          <bpsim:ElementParameters xsi:type="bpsim:ElementParameters" elementRef="_202B7CA8-61A9-4092-8770-3BAF8315F026" id="_J8kcinmaEe6Ri4nSU6fHTA">
             <bpsim:TimeParameters xsi:type="bpsim:TimeParameters">
               <bpsim:ProcessingTime xsi:type="bpsim:Parameter">
                 <bpsim:NormalDistribution mean="0.0" standardDeviation="0.0"/>
@@ -154,7 +154,7 @@ System.out.println("Calling the other process");]]></drools:script>
         </bpsim:Scenario>
       </bpsim:BPSimData>
     </bpmn2:extensionElements>
-    <bpmn2:source>_BK8CEHmKEe6-DqWVeLLs5w</bpmn2:source>
-    <bpmn2:target>_BK8CEHmKEe6-DqWVeLLs5w</bpmn2:target>
+    <bpmn2:source>_J8j1cHmaEe6Ri4nSU6fHTA</bpmn2:source>
+    <bpmn2:target>_J8j1cHmaEe6Ri4nSU6fHTA</bpmn2:target>
   </bpmn2:relationship>
 </bpmn2:definitions>
